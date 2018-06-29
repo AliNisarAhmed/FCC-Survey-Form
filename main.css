@@ -31,8 +31,8 @@ body {
 	font-size: 1.6rem;
 	min-width: 33rem;
 	border: none;
-	background-color: beige;
-	width: 70%;
+	background-color: rgba(220, 242, 245, 0.658);
+	width: 65%;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -185,5 +185,6 @@ input[type="radio"], input[type="checkbox"] {
 	.commentbox, textarea {
 		width: 100%;
 		
-	}
+  }
+  
 }
