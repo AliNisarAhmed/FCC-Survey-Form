@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+
+
+<body>
+  <header>
+    <h1 id="title">survey form</h1>
+  </header>
+  
+  <main>
+    
+    <div class="container">
+
+      
+        <p id="description">Let us know how we can improve Free Code Camp!</p>
+      
+        
+      <form id="survey-form" class="form">
+          
+        <div class="textBox">
+          <div class="textLabel">
+            <label id="name-label" class="label" for="name">* Name</label>
+          </div>  
+          <div class="textInput">
+            <input id="name" type="text" class="input" placeholder="Enter your name" />
+          </div>
+        </div>
+      
+      
+        <div class="textBox">
+          <div class="textLabel">
+            <label id="email-label" class="label" for="email">* Email</label>
+          </div>       
+          <div class="textInput">
+            <input id="email" type="email" class="input" placeholder="Enter your Email" />   
+          </div>
+        </div>
+      
+        <div class="textBox">
+          <div class="textLabel">
+            <label id="number-label" class="label" for="number">* Age</label>
+          </div>
+          <div class="textInput">
+            <input id="number" type="number" class="input" placeholder="Age" min="18" max="100">  
+          </div>
+        </div>
+        
+        <div class="dropdown">
+          <div class="dropdownLabel">
+            <label class="selectLabel" for="dropdown">Which option best decsribes your current role</label>
+          </div>
+          <div id="dropdown" class="dropdownOptions">
+            <select>
+              <option value="none" selected disabled>--Select an option--</option>
+              <option value="student">Student</option>
+              <option value="fulltimejob">Full Time Job</option>
+              <option value="fulltimelearner">Full Time Learner</option>
+              <option value="nosay">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>  
+        </div>
+        
+        <div class="radio">
+          <div class="radioLabel">
+            <p>How likely is that you would recommed FreeCodeCamp to a friend</p>
+          </div>
+          
+          <div class="radioAnswers">
+
+            <div class="radioOption">
+              <input type="radio" id="definitely" name="recommend" value="definitely">
+              <label for="definitely">Definitely</label>           
+            </div>
+          
+            <div class="radioOption">
+              <input type="radio" id="maybe" name="recommend" value="maybe">
+              <label for="maybe">Maybe</label>            
+            </div>
+          
+            <div class="radioOption">
+              <input type="radio" id="notsure" name="recommend" value="notsure">
+              <label for="notsure">Not Sure</label>            
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="checkbox">
+          <div class="checkboxLabel">
+            <p>Things that should be improved in the future (Check all that apply):             </p>
+          </div>
+          <div class="checkboxAnswers">
+            <div class="checkboxOption">
+              <input type="checkbox" id="front" name="improve" value="frontend">
+              <label for="front">Front-end Projects</label>  
+            </div>
+            <div class="checkboxOption">
+              <input type="checkbox" id="back" name="improve" value="backend">
+              <label for="back">Back-end Projects</label>  
+            </div>
+            <div class="checkboxOption">
+              <input type="checkbox" id="data" name="improve" value="datavisual">
+              <label for="data">Data Visualization</label>  
+            </div>
+            <div class="checkboxOption">
+              <input type="checkbox" id="challenges" name="improve" value="challenges">
+              <label for="challenges">Challenges</label>  
+            </div>
+            <div class="checkboxOption">
+              <input type="checkbox" id="opensource" name="improve" value="opensource">
+              <label for="opensource">Open Source Community</label>  
+            </div>
+            <div class="checkboxOption">
+              <input type="checkbox" id="additional" name="improve" value="additional">
+              <label for="additional">Additional Courses</label>  
+            </div>
+            <div class="checkboxOption">
+              <input type="checkbox" id="forum" name="improve" value="forum">
+              <label for="forum">Forums</label>  
+            </div>
+          </div>
+        </div>
+        
+        <div class="comment">
+          <div class="commentLabel">
+            <p>Any Comments or Suggestions</p>
+          </div>
+          <div class="commentBox">
+            <textarea type="textarea" id="comments" name="comments" rows="3" cols="33" placeholder="Enter your comments here"></textarea>
+          </div>
+        </div>
+        
+        .<form class="submit">
+          <input id="submit" type="submit" class="submitButton">
+        </form>
+        
+      </form>
+    </div>
+  </main>
+</body>
+</html>

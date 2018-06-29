@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit; 
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	background: #C33764;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Lato', sans-serif;	
+}
+
+#title {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	text-align: center;
+	font-size: 3rem;
+	text-transform: capitalize;
+	color: white;
+}
+
+.container {
+	font-size: 1.6rem;
+	min-width: 33rem;
+	border: none;
+	background-color: beige;
+	width: 70%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.8);
+	border-radius: 2rem; 
+}
+
+#description {
+	margin-top: 1rem;
+	font-size: 2rem;
+	text-align: center;
+	padding: 0.5rem;
+}
+
+#survey-form {
+	width: 80%;
+}
+
+.textBox {
+	margin: 1.5rem auto;
+	display: flex;
+	/*border: 1px solid black;*/
+	justify-content: space-between;
+	align-items: center;
+}
+
+.textLabel {
+	margin-right: 2rem;
+	/*border: 1px solid red;*/
+	width: 47%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.textInput {
+	display: flex;
+	align-items: center;
+	/*border: 1px solid yellow;*/
+	width: 47%;
+	padding: .7rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+	padding: .5rem;
+	height: 2.5rem;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.dropdown, .radio, .checkbox, .comment {
+	/*border: 1px solid red;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+
+.dropdownLabel, .radioLabel, .checkboxLabel, .commentLabel {
+	/*border: 1px solid yellow;*/
+	width: 47%;
+	text-align: right;
+	align-self: flex-start;
+	margin-top: 0.5rem;
+}
+
+.dropdownOptions, .radioAnswers, .checkboxAnswers, .commentBox {
+	/*border: 1px solid blue;*/
+	width: 47%;
+	padding: .7rem;
+}
+
+.radioOption {
+	display: flex;
+	align-items: center;
+	width: 47%;
+	margin-bottom: .7rem;
+	/*border: 1px solid brown;*/
+}
+
+.checkboxOption {
+	margin-bottom: .7rem;
+}
+
+select {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+textarea {
+	width: 100%;
+	padding: 0.5rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	margin-right: 1.2rem;
+}
+
+
+.submit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.submitButton {
+	background-color: #C33764;
+	color: white;
+	padding: 1rem 3rem;
+	border: none;
+	border-radius: 100px;
+	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.submitButton:hover {
+	transform: translateY(-2px);
+	box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.submitButton:focus {
+	outline: none;
+	transform: translateY(1px);
+	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 700px) {
+	.dropdown, .radio, .checkbox, .comment {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.dropdownLabel, .radioLabel, .checkboxLabel, .commentLabel {
+		width: 100%;
+		text-align: center;
+	}
+
+	.checkboxOption {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.commentbox, textarea {
+		width: 100%;
+		
+	}
+}
